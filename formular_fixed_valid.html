@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dotazník</title>
+
+
+
+
+    <style>
+
+        .grid-wrap
+        {
+
+            display: grid;
+            grid: auto auto;
+            grid-template-columns: 250px 200px;
+           
+        
+        }
+
+
+        .grid-label
+        {
+            display: flex;
+            align-items: center;
+         
+        }
+
+
+
+    </style>
+    
+</head>
+<body>
+    <h1>TV dotazník</h1>
+    <form action="" method="post"class="grid-wrap">
+
+
+
+        
+        
+            
+                <div class="grid-label">Jméno a příjmení</div>
+                <div>
+                    <input type="text" name="jmeno" pattern="([A-Z|ŠČŘŽÝÁÍÉÓÚ][a-z|ščřžýíáéěůúó]+)\s([A-Z|ŠČŘŽÝÁÍÉÓÚ][a-z|ščřžýíáéěůúó]+)" required>
+                </div>
+
+                <div class="grid-label">Kolik vám je let?</div>
+                
+                <div>
+                    <input type="radio" name="vek" value="18"> 18 a méně<br>
+                    <input type="radio" name="vek" value="19"> 19 až 64 <br>
+                    <input type="radio" name="vek" value="65"> 65 a více<br>
+                </div>
+
+                <div class="grid-label">V jakých zařízeních sledujete TV?</div>
+
+                
+                <div>
+                    <input type="checkbox" name="tv[]" value="Televize"> Televize<br>
+                    <input type="checkbox" name="tv[]" value="Počítač"> Počítač<br>
+                    <input type="checkbox" name="tv[]" value="Mobil"> Mobil<br>
+                </div>
+
+                <div class="grid-label">Co se vám líbí na tv?</div>
+
+                <div><textarea name="libi" rows="4" cols="50" pattern="\w\s*" required></textarea></div>
+           
+                <div class="grid-label">Jakou výši poplatku jste ochotni platit</div>
+
+
+                <div> 
+                    <select>
+                    <optgroup>
+                        <option>0</option>
+                        <option>50</option>
+                        <option>100</option>
+                        <option>150</option>
+                        <option>200</option>
+                        <option>250</option>
+                        <option>300</option>
+                    </optgroup>
+                </select> 
+            </div>
+                
+
+                
+              
+          
+
+                
+                   
+           
+
+
+
+               
+                
+
+
+
+           
+              
+              
+
+         
+       
+
+        <div>
+            <input type="submit" value="Odeslat">
+          </div>
+
+        
+
+    </form>
+</body>
+</html>
+
+
